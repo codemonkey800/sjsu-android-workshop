@@ -1,5 +1,5 @@
 # Contributing
-If you're awesome and Android and want to teach people stuff. Message me and I'll add you as a contributor. Then you can can post the weekly example apps here. 
+If you're awesome at Android and want to teach people stuff. Message me and I'll add you as a contributor. Then you can can post the weekly example apps here. 
 
 # Rules
 Okay they're not really rules but just stuff I'd like for you to do
