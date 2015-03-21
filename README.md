@@ -3,6 +3,8 @@ Here's a big repo of all of the example apps from the SJSU Android Workshops.
 
 All of the example apps are located in apps by week. 
 
+There's also a template application in the templates folder. Copy that folder somewhere else and open it in Android Studio. Modify as much as you like. The template will be updated over time, but currently has an abstract class that contains a Toolbar.
+
 # License
 All of the projects are under the MIT license.
 

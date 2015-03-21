@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar.TranslucentDecor">
+        <item name="android:colorPrimary">@color/primary_color</item>
+        <item name="android:colorAccent">@color/color_accent</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+</resources>
