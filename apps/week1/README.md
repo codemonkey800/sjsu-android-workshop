@@ -1,7 +1,7 @@
 # Week 1 App
 For week 1 of the app, we go over basic project structure and a hello world activity.
 
-# Imorting the project
+# Importing the project
 To import the project, open Android Studio, and click on "Open an existing Android Studio project"
 Look for this directory and import the directory itself. It'll take a few minutes for Gradle to sync everything and 
 you should be good.

@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TestApplication</string>
+
+    <string name="app_name">WeekTwo</string>
+    <string name="send">Send</string>
+    <string name="enter_text">Enter Text.</string>
+    <string name="placeholder_text">Placeholder Text</string>
+
 </resources>

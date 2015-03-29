@@ -1,0 +1,53 @@
+<!--RelativeLayout: A Layout where the positions of the children can be described in relation to each other or to the parent.
+    match_parent: in this case the parent is the screen of the phone.
+    context: links the xml file to the java file ".ClassName"-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <!-- Creating button widget
+        Button: Represents a push-button widget. Push-buttons can be pressed, or clicked, by the user to perform an action.
+        id: adds the widget to the project resources so that it can be accessed in java or xml files.
+        wrap_content: resizes the widget based on the content such as text or images in this case the button resizes to the text "Send"
+        text:  adds text to the button. We store string values in ../values/strings.xml
+            @string refers to a string stored in strings.xml.
+        layout_alignParentBottom: aligns the widget to the bottom of the parent. In this case our parent is our RelativeLayout-->
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- Creating Edit Text widget
+        EditText: EditText is a thin veneer over TextView that configures itself to be editable.
+        match_parent: will resize the layout to the same dimension of the parent.
+        hint: placeholder text, to give the user context on what to type.
+        layout_toRightOf: the widget is now dependant on the button. It will always be to the right of the button-->
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_text"
+        android:layout_toRightOf="@id/send_button"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- Creating Text View
+        TextView: Displays text to the user and optionally allows them to edit it. A TextView is a complete text editor, however the basic class is configured to not allow editing.
+        textSize: the units is sp, scale-independent pixels. All text should use sp units.-->
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder_text"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

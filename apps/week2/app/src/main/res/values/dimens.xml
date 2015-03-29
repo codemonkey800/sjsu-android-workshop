@@ -1,6 +1,0 @@
-<resources>
-    <!-- Toolbar Dimensions -->
-    <dimen name="mobile_toolbar_height">56dp</dimen>
-    <dimen name="moible_landscape_toolbar_height">48dp</dimen>
-    <dimen name="tablet_desktop_toolbar_height">64dp</dimen>
-</resources>
