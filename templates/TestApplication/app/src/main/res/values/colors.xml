@@ -1,6 +1,0 @@
-<resources>
-    <!-- Change this to fit your app's theme -->
-    <color name="toolbar_color">#ff212121</color>
-    <color name="primary_color">#00BCD4</color>
-    <color name="color_accent">#EA80FC</color>
-</resources>

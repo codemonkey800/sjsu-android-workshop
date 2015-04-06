@@ -1,9 +1,9 @@
 # SJSU Android Workshop 
-Here's a big repo of all of the example apps from the SJSU Android Workshops. 
+This be the repo for the Android Workshop. Every week, we'll be posting 
+the example apps here and updating the template app over time.
 
-All of the example apps are located in apps by week. 
-
-There's also a template application in the templates folder. Copy that folder somewhere else and open it in Android Studio. Modify as much as you like. The template will be updated over time, but currently has an abstract class that contains a Toolbar.
+# Getting the Apps
+Hopefully you know Git. Each app is located on their own branch, as well as the template app.
 
 # License
 All of the projects are under the MIT license.
