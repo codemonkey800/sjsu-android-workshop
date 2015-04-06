@@ -1,4 +1,4 @@
-package androidworkshop.org.weektwo.app;
+package com.androidworkshop.week2;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
