@@ -1,0 +1,34 @@
+<!--
+    The layout for the main activity.
+
+    xmlns:android="http://schemas.android.com/apk/res/android" refers to the
+    Android XML namespace. Without this, you wouldn't be able to refer to the Android views and widgets.
+
+    Notice that the RelativeLayout and TextView have android:layout_width and android:layout_height
+    attributes defined.
+    Every View and ViewGroup requires the attributes android:layout_width and android:layout_height
+    to be defined.
+
+    Also notice that the corresponding paddings below
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        This is a widget for simply display text.
+        android:text refers to the @string/hello_world variable
+        defined in values/strings.xml. If you're using Android Studio (Which you should),
+        you should be seeing "Hello world!" in your IDE. However, it actually refers
+        to the variable. But Android Studio is awesome and displays the value of the
+        string depending on the language being used in Android Studio.
+
+        Double click on the "Hello world!" string below and it should show the variable name.
+    -->
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
