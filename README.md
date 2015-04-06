@@ -5,6 +5,21 @@ the example apps here and updating the template app over time.
 # Getting the Apps
 Hopefully you know Git. Each app is located on their own branch, as well as the template app.
 
+To pull an app, run the command:
+```
+    git pull -b <week> https://github.com/codemonkey800/sjsu-android-workshop.git <week>
+```
+
+# Template App
+We've also included a template app that we'll be updating over time. If you want to get that,
+run this:
+```
+    git pull -b template https://github.com/codemonkey800/sjsu-android-workshop.git template
+```
+
+Refer to the README.md file in the `template` directory so you'll know how to make the app
+your own. Or read it [here](https://github.com/codemonkey800/sjsu-android-workshop/tree/template).
+
 # License
 All of the projects are under the MIT license.
 
