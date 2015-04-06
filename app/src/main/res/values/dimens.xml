@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="vertical_keyline">16dp</dimen>
+    <dimen name="vertical_spacing">8dp</dimen>
+</resources>

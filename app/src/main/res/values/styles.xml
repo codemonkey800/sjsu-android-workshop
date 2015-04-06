@@ -1,0 +1,19 @@
+<resources>
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="toolbarStyle">@style/BaseTheme.ToolbarStyle</item>
+    </style>
+
+    <style name="BaseTheme.ToolbarStyle"
+        parent="Widget.AppCompat.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mobile_toolbar_height</item>
+        <item name="android:paddingTop">@dimen/toolbar_padding_top</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+</resources>

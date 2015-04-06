@@ -1,0 +1,69 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/twitter_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="@string/twitter_text_view"
+        android:textSize="34sp"/>
+
+    <EditText
+        android:id="@+id/tweet_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vertical_keyline"
+        android:layout_marginStart="@dimen/vertical_keyline"
+        android:layout_marginRight="@dimen/vertical_keyline"
+        android:layout_marginEnd="@dimen/vertical_keyline"
+        android:layout_below="@id/twitter_label"
+        android:singleLine="false"/>
+
+    <TextView
+        android:id="@+id/characters_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tweet_edit_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:text="0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tweet_edit_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="/ 140"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAttachMediaButtonClick"
+        android:layout_below="@id/tweet_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="@dimen/vertical_keyline"
+        android:layout_marginStart="@dimen/vertical_keyline"
+        android:drawableLeft="@drawable/ic_image"
+        android:drawableStart="@drawable/ic_image"
+        android:text="@string/media_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tweet_edit_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="@dimen/vertical_keyline"
+        android:layout_marginEnd="@dimen/vertical_keyline"
+        android:drawableLeft="@drawable/ic_send"
+        android:drawableStart="@drawable/ic_send"
+        android:text="@string/tweet_btn"
+        android:onClick="onSendTweetButtonClick"/>
+
+</RelativeLayout>

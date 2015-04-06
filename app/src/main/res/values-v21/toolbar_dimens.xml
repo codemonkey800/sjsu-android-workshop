@@ -1,0 +1,21 @@
+<resources>
+    <!-- Toolbar Dimensions -->
+    <!--
+        These dimensions are the original dimensions + 25dp
+        which is the height of the status bar.
+
+        Material design dictates us to have our navigation drawer behind
+        the status bar, which should be translucent. To do this, we have
+        to increase the height of the Toolbar and then pad the top of
+        the Toolbar to shift the title, navigation icon, etc.
+    -->
+    <dimen name="mobile_toolbar_height">81dp</dimen>
+    <dimen name="mobile_toolbar_height_full">153dp</dimen>
+    <dimen name="moible_landscape_toolbar_height">73dp</dimen>
+    <dimen name="moible_landscape_toolbar_height_full">145dp</dimen>
+    <dimen name="tablet_desktop_toolbar_height">161dp</dimen>
+    <dimen name="tablet_desktop_toolbar_height_full">233dp</dimen>
+
+    <!-- The height of the status bar -->
+    <dimen name="toolbar_padding_top">25dp</dimen>
+</resources>

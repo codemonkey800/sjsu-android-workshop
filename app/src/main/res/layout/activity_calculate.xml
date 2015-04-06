@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="+"
+        android:textSize="54sp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/operator"
+        android:layout_marginBottom="72dp"
+        android:text="69"
+        android:textSize="54sp"/>
+
+    <EditText
+        android:id="@+id/operand1_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/vertical_keyline"
+        android:layout_marginStart="@dimen/vertical_keyline"
+        android:layout_toLeftOf="@id/operator"
+        android:layout_toStartOf="@id/operator"
+        android:singleLine="true"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/operand2_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/vertical_keyline"
+        android:layout_marginEnd="@dimen/vertical_keyline"
+        android:layout_toRightOf="@id/operator"
+        android:layout_toEndOf="@id/operator"
+        android:singleLine="true"
+        android:inputType="numberDecimal"/>
+
+</RelativeLayout>

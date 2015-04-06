@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Week3</string>
+
+    <string name="activity_hello">Hello, World!</string>
+    <string name="hello_world">Hello, World!</string>
+
+    <string name="activity_calculate">Calculate</string>
+    <string name="activity_calculate_with_data">Calculate with Intent Data</string>
+
+    <string name="activity_display_image">Display Image</string>
+
+    <string name="activity_twitter">Tweet</string>
+    <string name="twitter_composer_activity">com.twitter.android.composer.ComposerActivity</string>
+    <string name="twitter_text_view">Tweet something yo!</string>
+    <string name="media_btn">Attach Media</string>
+    <string name="tweet_btn">Send Tweet</string>
+</resources>
