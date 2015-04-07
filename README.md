@@ -7,7 +7,7 @@ Hopefully you know Git. Each app is located on their own branch, as well as the 
 
 To pull an app, run the command:
 ```
-    git pull -b <week> https://github.com/codemonkey800/sjsu-android-workshop.git <week>
+    git pull -b <app> https://github.com/codemonkey800/sjsu-android-workshop.git <app>
 ```
 
 # Template App
