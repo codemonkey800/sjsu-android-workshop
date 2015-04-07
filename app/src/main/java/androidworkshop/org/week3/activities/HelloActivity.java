@@ -13,7 +13,7 @@ public class HelloActivity extends ToolbarActivity {
 
     @Override
     protected int getContentViewLayoutID() {
-        return R.layout.activity_main;
+        return R.layout.activity_hello;
     }
 
     @Override
