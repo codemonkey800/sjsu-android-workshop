@@ -1,15 +1,12 @@
-# Template Application
-Hola, this is a template application we'll be updating with stuff over time. Ideally, you'd
-want to use this template for inspiration when making an app. However, you don't always have
-to agree with everything we write here. In fact, it's encouraged you hack away as much
-as you like.
+Week 3
+======
+For this week, we go over starting activities from other activities, sharing data between activities, explicit intents, and implicit intents.
 
-Or you could always use the template provided by Android Studio. 
+See the references below and read the comments in the code to get an idea how everything works.
 
-# Making it your own
-When you use the template, you have to change a few things. Namely, they're:
-- `applicationId` in the `build.gradle` file
-- `package` attribute in the `AndroidManifest.xml` file
-- Reorganize the directory structure in the `src` folder to map directly to your package attribute
-- Change the values for `compileSdkVersion` and `buildToolsVersion` in the `build.gradle` file. We'll try to be as up to date with the current build tools possible. Or if you want to use an older version, that's cool too.
-- Stuff in the `build.gradle` file. Seriously, add as many dependencies, modifications, etc., as you want.
+Reference
+=========
+- [Starting another activity](http://developer.android.com/training/basics/firstapp/starting-activity.html)
+- [Sharing Data between activities (StackOverflow Answer)](http://stackoverflow.com/a/4878259/4625282)
+- [Explicit/Implicit Intents](http://developer.android.com/guide/components/intents-filters.html)
+
