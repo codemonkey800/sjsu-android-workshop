@@ -13,10 +13,18 @@ import android.widget.Toast;
 
 import androidworkshop.org.week3.R;
 
-public class TweetActivity extends ToolbarActivity {
+/*
+ * Probably the most advanced part of this example.
+ * This activity illustrates how to start an activity chooser through an implicit
+ * intent, handle the results of that intent, and start a specific activity
+ * from a different application.
+ */
+public class TweetActivity extends BaseActivity {
 
+    // The request code for the image picker intent
     private static final int MEDIA_REQUEST_CODE = 1;
 
+    // Of course yo
     private static final int MAX_CHARACTERS = 140;
 
     private String mBody;
@@ -36,6 +44,10 @@ public class TweetActivity extends ToolbarActivity {
 
         final int originalColor = mCharactersLeft.getCurrentTextColor();
 
+        /*
+         * This awesome code makes the character count red when
+         * the text length is greater than 140.
+         */
         mEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -75,12 +87,18 @@ public class TweetActivity extends ToolbarActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // Gets the data from the image picker
         if(requestCode == MEDIA_REQUEST_CODE && resultCode == RESULT_OK) {
             mMediaUri = data.getData();
-            mMediaUri.describeContents();
         }
     }
 
+    /*
+     * The layout of this activity has a button for attaching media.
+     * This method handles that. It does so by starting an implicit intent
+     * that can handle image picking, or ACTION_GET_CONTENT with the mime type
+     * of "image/*". After getting the image, onActivityResult() handles the data
+     */
     public void onAttachMediaButtonClick(View v) {
         Intent mediaIntent = new Intent();
         mediaIntent.setAction(Intent.ACTION_GET_CONTENT);
@@ -92,6 +110,13 @@ public class TweetActivity extends ToolbarActivity {
         }
     }
 
+    /*
+     * Finally, this method sends the tweet data
+     * over to the Twitter application. Make sure you have the Twitter app open
+     * otherwise this won't work.
+     *
+     * This method attaches the media (if it was chosen earlier) as well as the body of the text.
+     */
     public void onSendTweetButtonClick(View v) {
         Intent tweetIntent = new Intent();
         try {

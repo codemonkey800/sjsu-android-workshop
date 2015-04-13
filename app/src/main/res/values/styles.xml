@@ -1,4 +1,5 @@
 <resources>
+    <!-- The base theme for the app. This theme is used in the AndroidManifest.xml file -->
     <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/color_primary</item>
         <item name="colorPrimaryDark">@color/color_primary_dark</item>
@@ -6,6 +7,7 @@
         <item name="toolbarStyle">@style/BaseTheme.ToolbarStyle</item>
     </style>
 
+    <!-- The style of the toolbar  -->
     <style name="BaseTheme.ToolbarStyle"
         parent="Widget.AppCompat.Toolbar">
         <item name="android:layout_width">match_parent</item>

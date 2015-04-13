@@ -7,6 +7,18 @@
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme">
 
+        <!--
+            Activities are specified here in the AndroidManifest.xml file.
+            For each activity, you can specify intent filters and whatnot
+            to intercept implicit intents and handle them.
+         -->
+
+        <!--
+            The MainActivity class is the entry point of our application, and thus,
+            has a special intent filter. For action, it has the ACTION_MAIN value
+            and for category, it has LAUNCHER. This marks the MainActivity class
+            as the entry point of the app.
+         -->
         <activity
             android:name="androidworkshop.org.week3.activities.MainActivity"
             android:label="@string/app_name">
@@ -26,6 +38,12 @@
 
         </activity>
 
+        <!--
+            This activity can only be opened through an implicit intent.
+            This intent would have to have the ACTION_SEND action and the data
+            would have to have a mime type of image/* for this activity
+            to be listed in the activity chooser.
+        -->
         <activity
             android:name=".activities.DisplayImageActivity"
             android:label="@string/activity_display_image">

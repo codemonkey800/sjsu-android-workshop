@@ -7,11 +7,14 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import androidworkshop.org.week3.R;
 
-public class CalculateActivity extends ToolbarActivity {
+/*
+ * This is an activity that can calculate
+ * addition between two numbers. It can do so through the
+ * user interface or through intents.
+ */
+public class CalculateActivity extends BaseActivity {
 
     private TextView mResultView;
     private EditText mOperand1EditText, mOperand2EditText;
@@ -21,7 +24,17 @@ public class CalculateActivity extends ToolbarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        /*
+         * In this section of code,
+         * we first receive the intent from a calling activity.
+         * We first inspect the intent and check if has two data,
+         * "operand1" and "operand2", and if so, calculate and store
+         * the result in a new intent, and then send it back.
+         *
+         * This example shows how we can take intercept data
+         * from a calling activity and handle it accordingly, as well
+         * as respond back with more data.
+         */
         Intent intent = getIntent();
 
         if(intent.hasExtra("operand1") && intent.hasExtra("operand2")) {
@@ -35,11 +48,19 @@ public class CalculateActivity extends ToolbarActivity {
             finish();
         }
 
+        super.onCreate(savedInstanceState);
+
         mToolbar.setTitle(R.string.activity_calculate);
 
         mResultView = (TextView) findViewById(R.id.result);
         mOperand1EditText = (EditText) findViewById(R.id.operand1_edit_text);
         mOperand2EditText = (EditText) findViewById(R.id.operand2_edit_text);
+
+        /*
+         * The following two listeners update
+         * the resulting TextView whenever the number inside
+         * the EditText changes
+         */
 
         mOperand1EditText.addTextChangedListener(new TextWatcher() {
             @Override

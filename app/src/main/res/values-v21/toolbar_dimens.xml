@@ -4,10 +4,8 @@
         These dimensions are the original dimensions + 25dp
         which is the height of the status bar.
 
-        Material design dictates us to have our navigation drawer behind
-        the status bar, which should be translucent. To do this, we have
-        to increase the height of the Toolbar and then pad the top of
-        the Toolbar to shift the title, navigation icon, etc.
+        Since we set the status bar to be translucent, we need to shift
+        the contents of the toolbar downwards by 25dp.
     -->
     <dimen name="mobile_toolbar_height">81dp</dimen>
     <dimen name="mobile_toolbar_height_full">153dp</dimen>

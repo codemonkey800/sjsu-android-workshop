@@ -1,5 +1,6 @@
 <resources>
 
+    <!-- This sets the status bar to be translucent -->
     <style name="AppTheme" parent="BaseTheme">
         <item name="android:windowTranslucentStatus">true</item>
     </style>

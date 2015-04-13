@@ -4,7 +4,11 @@ import android.os.Bundle;
 
 import androidworkshop.org.week3.R;
 
-public class HelloActivity extends ToolbarActivity {
+/*
+ * A simple activity with a TextView in the center.
+ * Similar to what we did in week 1
+ */
+public class HelloActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
